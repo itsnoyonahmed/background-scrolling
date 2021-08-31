@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Background Size Change on Scroll</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <div id="header"></div>
+    <section>
+        <h2>Background Size Change when Scrolling</h2>
+        <p>The age we live in is an age of science. Science has given man so many wonderful gifts. All the wonders we see around us are of science. Science has made our life easier, more comfortable and more enjoyable. Now we cannot think our modern life without modern science.
+            <br /><br />
+            The first wonder of modern science is electricity. It has brought about a great change in our life, society and culture. It is a great source of power and energy. All our modern elements and inventions like the radio, television, lights, fans, electric irons, mills, factories, etc work with the power of electricity.Science has turned the whole world into a global village. Telephone, telex, fax, wireless, telegrams, mobile phone are great wonders. We can send news from one corner of the world to other within a moment. They have conquered space, distance and time. Radio and television are also great media for communication.
+            <br /><br />
+            Science has discovered many wonders for our recreation. We have cinema, television, radio, tape recorder, gramophone and VCR etc for our recreation.
+            <br /><br />
+            Computer and internet are also the most wonderful invention of modern science. Computer is also called electric brain because it works like human brain. It can solve thousand of problems smoothly within a second. Internet has wonderfully ourhastened the activity in any offices. These two inventions have wonderfully changed lifestyle.
+            <br /><br />
+            Science has removed the distance of place. It has saved time. We can travel hundred of miles within a short time by cars, aeroplanes, buses, trains, launches and steamers. The invention of nuclear energy is a great wonder of modern science. The rocket is another wonder of science. It has made space travel easy. Man has landed on the moon successfully. Science has lessened human sufferings. It has found out the new ways of health and life. Penicillin, X-ray, biopsy and ultra-sonography, E.C.G are some of the wonders of modern science in the field of medical science. Hospitals, private clinics and doctors cannot go even for a single day without these.
+            <br /><br />
+            Science is meant for the benefit of mankind. But man misuses this heavenly gift out of his selfish motive and brings unspeakable sufferings to human life. So, the gift os science should be utilized for the welfare of mankind.
+        </p>
+    </section>
+    <script type="text/javascript">
+        const bg = document.getElementById('header');
+        window.addEventListener('scroll', function() {
+            bg.style.backgroundSize = 160 - +window.pageYOffset / 12 + '%';
+            bg.style.opacity = 1 - +window.pageYOffset / 600 + '';
+        })
+
+    </script>
+</body>
+
+
+
+</html>
